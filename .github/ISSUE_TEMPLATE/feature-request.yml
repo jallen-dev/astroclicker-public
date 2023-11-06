@@ -1,0 +1,27 @@
+name: Feature Request
+description: Submit an idea for a new feature
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees:
+  - jallen-dev
+body:
+  - type: textarea
+    id: describe-feature
+    attributes:
+      label: Describe the feature
+      description: Be specific. How do you expect it to work? Why would this be a good addition to the game?
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to submit your idea!
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: >
+            I understand that this is a request, and there is no guarantee that this feature will be added. 
+            Furthermore, I acknowledge that I am not entitled to any compensation for this idea nor do I expect to receive "credit" for the idea.
+          required: true
